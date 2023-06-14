@@ -44,7 +44,9 @@ export function IssueItem({
             assigneeUser.isSuccess ? assigneeUser.data.profilePictureUrl : ""
           }
           className="assigned-to"
-          alt={"Assigned to image"}
+          alt={`Assigned to ${
+            assigneeUser.isSuccess ? assigneeUser.data.name : "avatar"
+          }`}
         />
       ) : null}
       <span className="comment-count">
