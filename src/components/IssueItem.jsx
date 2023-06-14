@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom";
-import { GoIssueOpened, GoIssueClosed, GoComment } from 'react-icons/go';
-import { relativeDate } from '../helpers/relativeDate';
-
+import { GoIssueOpened, GoIssueClosed, GoComment } from "react-icons/go";
+import { relativeDate } from "../helpers/relativeDate";
 
 export function IssueItem({
-  title, number, assignee, commentCount, createdBy, createdDate, labels, status,
+  title,
+  number,
+  assignee,
+  commentCount,
+  createdBy,
+  createdDate,
+  labels,
+  status,
 }) {
   return (
     <li>
